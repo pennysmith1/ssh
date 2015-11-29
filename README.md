@@ -5,7 +5,7 @@ wrote up an awesome post over at his [website](http://nerderati.com) titled [Sim
 It really is amazing, and I suggest that you check it out.
 
 To get started, just execute the code below. That will clone this repo in the
-current working directory and then copy accross my ssh [config](https://github.com/whitneyit/ssh/blob/master/config)
+current working directory and then copy accross my ssh [config](https://github.com/pennysmith1/ssh/blob/master/config)
 file into the `~/.ssh` folder, creating it if it does not already exist. Next it
 will set the permission of the folder accordinly.
 
@@ -37,7 +37,7 @@ So, once you are in the desired folder to store this code, run the bash script
 below.
 
 ```sh
-$ bash -c "$(curl -fsSL https://raw.github.com/whitneyit/ssh/master/setup)"
+$ bash -c "$(curl -fsSL https://raw.github.com/pennysmith1/ssh/master/setup)"
 ```
 
 With that complete, you can now create create ssh keys and place them in the
@@ -81,7 +81,7 @@ Next ensure that you set the permissions of the key correctly:
 $ chmod 600 ~/.ssh/your_email@example.com
 ```
 
-If you are note using my [dotfiles](https://github.com/whitneyit/dotfiles) repo,
+If you are note using my [dotfiles](https://github.com/pennysmith1/dotfiles) repo,
 you will have to ensure that you have started up the `ssh-agent` and that the
 new ssh key(s) habe been **added** to the `ssh-agent`.
 
@@ -93,4 +93,4 @@ $ eval ssh-add "~/.ssh/your_email@example.com"
 ```
 
 Lastly, with all of that setup complete, don't forget to add those keys to your
-providers; [GitHub](https://github.com/settings/ssh), [BitBucket](https://bitbucket.org/account/user/whitneyit/ssh-keys), etc.
+providers; [GitHub](https://github.com/settings/ssh), [BitBucket](https://bitbucket.org/account/user/pennysmith1/ssh-keys), etc.
